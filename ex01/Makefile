@@ -6,7 +6,7 @@
 #    By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/27 21:03:57 by yooshima          #+#    #+#              #
-#    Updated: 2024/12/30 16:25:27 by yooshima         ###   ########.fr        #
+#    Updated: 2024/12/30 22:42:17 by yooshima         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		= zombie
 CPP			= c++
 CPPFLAGS	= -Wall -Wextra -Werror -std=c++98
 
-SRCS		= main.cpp Zombie.cpp
+SRCS		= main.cpp Zombie.cpp zombieHorde.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 all:	$(NAME)

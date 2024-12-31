@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 19:11:56 by yooshima          #+#    #+#             */
-/*   Updated: 2024/12/31 09:33:29 by yooshima         ###   ########.fr       */
+/*   Created: 2024/12/31 14:44:55 by yooshima          #+#    #+#             */
+/*   Updated: 2024/12/31 15:33:10 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanB.hpp"
+#include <iostream>
 
-int main(void) {
-	int N = 5;
-	Zombie *zombies = zombieHorde(N, "G");
-	for (int i = 0; i < N; i++) {
-		zombies[i].announce();
+HumanB::HumanB(std::string name) :
+	m_name(name)
+{};
+
+HumanB::~HumanB() {
+};
+
+void	HumanB::setWeapon(Weapon weapon) {
+	m_weapon = &weapon;
+};
+
+void	HumanB::attack () {
+	if (!m_weapon) {
+		std::cout << m_name << " has not Weapon! Can not attak!" << std::endl;
+		return ;
 	}
-	delete [] zombies;
+	std::cout << m_name << " attacks with their " << m_weapon->getType() << std::endl;
 }

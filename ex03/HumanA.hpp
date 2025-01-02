@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/31 11:53:50 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/02 11:03:20 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:19:18 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class HumanA {
 	public:
 		HumanA(std::string name, Weapon& weapon);
 		~HumanA();
-		void	attack();
+		void		attack();
 	private:
 		std::string	m_name;
 		Weapon		&m_weapon;

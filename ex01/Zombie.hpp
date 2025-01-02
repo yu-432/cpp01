@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 17:32:30 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/02 11:03:04 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:18:59 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ class Zombie {
 		Zombie();
 		Zombie(std::string name);
 		~Zombie();
-		void	announce();
-		void	setName(std::string name);
+		void		announce();
+		void		setName(std::string name);
 	private:
 		std::string	name;
 };

@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/31 11:36:20 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/02 11:03:43 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:19:43 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ class Weapon {
 		void		setType(std::string type);
 		std::string	getType() const;
 	private:
-		std::string m_type;
+		std::string	m_type;
 };

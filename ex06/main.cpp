@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 12:14:37 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/02 12:25:53 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:20:52 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
 		std::cerr << "Error: Invalid arguments" << std::endl;
 		return 1;
 	}
-	Harl harl;
+	Harl	harl;
 	harl.complain(argv[1]);
 	return 0;
 }

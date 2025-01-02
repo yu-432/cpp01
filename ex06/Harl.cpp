@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:40:34 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/02 12:57:56 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 13:20:25 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	Harl::complain(std::string level) {
 }
 
 Harl::levelEnum	Harl::getLevel(std::string level) {
-	size_t i;
+	size_t	i;
 	for (i = 0; i < 4; i++) {
 		if (level == levelStrs[i])
 			break ;

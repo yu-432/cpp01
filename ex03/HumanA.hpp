@@ -6,12 +6,11 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/31 11:53:50 by yooshima          #+#    #+#             */
-/*   Updated: 2024/12/31 15:23:50 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 11:03:20 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WEAPONA_HPP
-#define WEAPONA_HPP
+#pragma once
 
 #include <string>
 #include "Weapon.hpp"
@@ -25,5 +24,3 @@ class HumanA {
 		std::string	m_name;
 		Weapon		&m_weapon;
 };
-
-#endif

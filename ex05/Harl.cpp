@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/01 13:50:54 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/01 17:15:32 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/02 12:16:13 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Harl::Harl() {
 	funcs[1] = &Harl::info;
 	funcs[2] = &Harl::warning;
 	funcs[3] = &Harl::error;
-};
+}
 
 Harl::~Harl() {
 }

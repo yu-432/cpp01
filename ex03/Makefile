@@ -6,12 +6,12 @@
 #    By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/27 21:03:57 by yooshima          #+#    #+#              #
-#    Updated: 2024/12/31 15:32:32 by yooshima         ###   ########.fr        #
+#    Updated: 2025/01/01 22:48:03 by yooshima         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= human
-CPP			= c++
+CXX			= c++
 CPPFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 SRCS		= main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
@@ -20,7 +20,7 @@ OBJS		= $(SRCS:.cpp=.o)
 all:	$(NAME)
 
 $(NAME): $(OBJS)
-	$(CPP) $(CPPFLAGS) $(OBJS) -o $(NAME)
+	$(CXX) $(CPPFLAGS) $(OBJS) -o $(NAME)
 
 clean:
 	rm -f $(OBJS)

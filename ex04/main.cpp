@@ -6,7 +6,7 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/31 17:35:37 by yooshima          #+#    #+#             */
-/*   Updated: 2025/01/01 12:33:43 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/08 23:27:39 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ std::string replaceLine(const std::string line, const std::string str1, const st
 }
 
 bool processFile(const std::string filename, const std::string str1, const std::string str2) {
-	std::ifstream ifs(filename);
+	std::ifstream ifs(filename.c_str());
 	if (!ifs.is_open()) {
 		std::cerr << "Error: Can not open input file" << std::endl;
 		return false;
 	}
 
 	std::string outfileName = filename + ".replace";
-	std::ofstream ofs(outfileName);
+	std::ofstream ofs(outfileName.c_str());
 	if (!ofs.is_open()) {
 		std::cerr << "Error: Can not create open file" << std::endl;
 		return false;

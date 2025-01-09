@@ -6,26 +6,26 @@
 /*   By: yooshima <yooshima@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 19:11:56 by yooshima          #+#    #+#             */
-/*   Updated: 2024/12/30 19:25:06 by yooshima         ###   ########.fr       */
+/*   Updated: 2025/01/09 11:46:40 by yooshima         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 int main(void) {
-	Zombie *z1;
-	Zombie *z4;
-	Zombie *z5;
-	Zombie z6("six");
-	
-	z6.announce();
-	z1 = newZombie("one");
-	randomChump("two");
-	randomChump("three");
-	z4 = newZombie("four");
-	z5 = newZombie("five");
-	z1->announce();
-	delete z1;
-	delete z5;
-	delete z4;
+  Zombie *z1;
+  Zombie *z4;
+  Zombie *z5;
+  Zombie z6("six");
+
+  z6.announce();
+  z1 = newZombie("one");
+  randomChump("two");
+  randomChump("three");
+  z4 = newZombie("four");
+  z5 = newZombie("five");
+  z1->announce();
+  delete z1;
+  delete z5;
+  delete z4;
 }
